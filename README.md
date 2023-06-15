@@ -1,2 +1,2 @@
-# countstop
+# stopwatch
 Stopwatch/Countdown
