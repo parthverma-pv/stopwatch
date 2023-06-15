@@ -30,7 +30,24 @@ body{
     font-weight: 600;
     font-size: 20px;
 }
+#lap{
+    display: flex;
+    justify-content: center;
+    height:150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(24, 27, 44);
+    overflow: scroll;
+}
+span{
+    padding: 20px;
+    margin-left: 10px;
+}
 
+td{
+    text-align: center;
+    width: 100px;
+}
 .hidden{
     display: none;
 }
