@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand&display=swap');
+html{
+    overflow: hidden;
+}
+
 body{
     overflow: hidden;
     background-color: rgb(9, 14, 39);
@@ -16,11 +20,11 @@ body{
     font-family: 'Courier New', Courier, monospace;
     justify-content: center;
     font-size: 20px;
+    margin-top: 50px;
 }
 #buttons{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .button{
@@ -59,11 +63,9 @@ body{
     height: 20px;
     justify-content: space-between;
     padding: 10px;
-    margin: 5px;
-
-    
-
+    margin: 5px; 
 }
+
 span{
     font-family: 'Quicksand', sans-serif;
     margin-left: 20px;
