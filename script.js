@@ -77,6 +77,7 @@ $(document).ready(function(){
             pauseStopwatch();
         }
         else{
+            $('#reset-lap-button').text('Lap');
             $(this).text('Pause');
             resumeStopwatch();
         }
