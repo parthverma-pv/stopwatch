@@ -61,11 +61,13 @@ $(document).ready(function(){
             lapcount++;
             laptime = elapsed - lastlap;
             const padLapcount = lapcount.toString().padStart(2, '0');
-            laptext =   `<div><span>Lap ${padLapcount}</span><span>:</span> <span>${(laptime/1000).toFixed(3)}${laptext}</span></div>`; 
-            $('#lap').html(laptext) 
+            lapdiv = document.createElement('div');
+            lapdiv.id = 'lapdiv';
+            laptext = `<span>Lap ${padLapcount}</span> <span>${(laptime/1000).toFixed(3)}</span>`;
+            lapdiv.innerHTML = laptext;
+            $('#lap').prepend(lapdiv); 
             lastlap = elapsed
         }
-        
     });
 
     $('#pause-resume-button').click(function(){

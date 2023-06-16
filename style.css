@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand&display=swap');
 body{
+    overflow: hidden;
     background-color: rgb(9, 14, 39);
     display: grid;
     justify-content: center;
     color: white;
     height: 100vh;
+    width:100vw;
     align-items: center;
 
 }
@@ -25,25 +28,47 @@ body{
     margin: 10px;
     width: 150px;
     border-radius: 20px;
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
 }
-#lap{
-    display: flex;
+#lapbox {
+    display: grid;
     justify-content: center;
-    height:150px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(24, 27, 44);
-    overflow: scroll;
+    margin-top: -50px;
 }
-span{
+#lap{
+    display: block;
+    height:150px;
+    width: 275px;
     padding: 20px;
-    margin-left: 10px;
+    border-radius: 10px;
+    /* background-color: rgb(24, 27, 44); */
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+.lap::-webkit-scrollbar {
+    display: none;
 }
 
+#lapdiv{
+    display: flex;
+    background-color:  rgb(43, 46, 65);
+    border-radius: 20px;
+    height: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+
+    
+
+}
+span{
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 td{
     text-align: center;
     width: 100px;
