@@ -66,7 +66,8 @@ $(document).ready(function(){
             laptext = `<span>Lap ${padLapcount}</span> <span>${(laptime/1000).toFixed(3)}</span>`;
             lapdiv.innerHTML = laptext;
             $('#lap').prepend(lapdiv); 
-            lastlap = elapsed
+            lastlap = elapsed;
+            $('#lap').scrollTop(0);
         }
     });
 
